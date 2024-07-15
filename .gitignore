@@ -2,3 +2,7 @@
 yellow_tripdata_2021-01.csv
 venv/
 ny_taxi_postgres_data
+.terraform
+keys/
+*.tfstate
+*.tfstate.backup
