@@ -21,6 +21,7 @@ services:
     volumes:
       - .:/home/src/
       - ./secrets/personal-gcp.json:/home/src/personal-gcp.json
+      - /home/src/terraform_mage
     restart: on-failure:5
   postgres:
     image: postgres:14
