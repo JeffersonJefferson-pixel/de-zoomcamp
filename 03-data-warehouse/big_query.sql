@@ -37,7 +37,7 @@ WHERE DATE(tpep_pickup_datetime) BETWEEN '2021-01-01' AND '2021-01-15';
 -- look into partitions
 SELECT table_name, partition_id, total_rows
 FROM `demo_dataset.INFORMATION_SCHEMA.PARTITIONS`
-WHERE table_name = 'yellow_trip_partitioned'
+WHERE table_name = 'yellow_tripdata_partitioned'
 ORDER BY total_rows DESC;
 
 -- Create a partitioned and clustered table
