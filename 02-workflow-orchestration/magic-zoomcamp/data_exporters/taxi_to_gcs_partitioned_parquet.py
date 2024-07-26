@@ -26,5 +26,6 @@ def export_data(data, *args, **kwargs):
         table,
         root_path=root_path,
         partition_cols=['tpep_pickup_date'],
-        filesystem=gcs
+        filesystem=gcs,
+        coerce_timestamps='us'
     )
