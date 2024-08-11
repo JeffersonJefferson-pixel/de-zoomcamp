@@ -2,10 +2,10 @@ version: 2
 
 sources:
   - name: staging
-    database:  terraform-demo-429506
+    database: terraform-demo-429506
     schema: trips_data_all
 
-    tables: 
+    tables:
       - name: green_tripdata
       - name: yellow_tripdata
 
@@ -33,7 +33,7 @@ models:
       - name: pickup_locationid
         data_type: int64
         description: ""
-        tests: 
+        tests:
           - relationships:
               field: locationid
               to: ref('taxi_zone_lookup')
@@ -42,7 +42,7 @@ models:
       - name: dropoff_locationid
         data_type: int64
         description: ""
-        tests: 
+        tests:
           - relationships:
               field: locationid
               to: ref('taxi_zone_lookup')
@@ -107,7 +107,7 @@ models:
       - name: payment_type
         data_type: int64
         description: ""
-        tests: 
+        tests:
           - accepted_values:
               values: "{{ var('payment_type_values') }}"
               severity: warn
@@ -140,7 +140,7 @@ models:
       - name: pickup_locationid
         data_type: int64
         description: ""
-        tests: 
+        tests:
           - relationships:
               field: locationid
               to: ref('taxi_zone_lookup')
@@ -149,7 +149,7 @@ models:
       - name: dropoff_locationid
         data_type: int64
         description: ""
-        tests: 
+        tests:
           - relationships:
               field: locationid
               to: ref('taxi_zone_lookup')
@@ -214,7 +214,7 @@ models:
       - name: payment_type
         data_type: int64
         description: ""
-        tests: 
+        tests:
           - accepted_values:
               values: "{{ var('payment_type_values') }}"
               severity: warn
