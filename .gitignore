@@ -1,5 +1,6 @@
 .ipynb_checkpoints
 *.csv
+!/04-analytics-engineering/taxi_rides_ny/seeds/*.csv
 venv/
 ny_taxi_postgres_data
 .terraform
